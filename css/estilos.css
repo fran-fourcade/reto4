@@ -1,5 +1,10 @@
+body{
+  font-family: 'Scope One', serif !important;
+}
+
 nav {
-  background-color: #7acc2d !important;
+  background-color: #0000 !important;
+  
 }
 
 #confirmar-pago {
@@ -8,4 +13,21 @@ nav {
 
 #confirmar-pago:hover {
   background-color: #63a426 !important;
+}
+
+#img1 {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.centrado-verticalmente{
+  margin: auto 0;
+}
+
+.texto-muy-grande {
+  font-size: 5rem !important;
+}
+
+.mt-3{
+  margin-top: 3rem; 
 }
