@@ -2,109 +2,108 @@
 <html lang="es">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Sitio construido con Bulma para reto 3" />
+  <meta charset="utf-8">
+  <meta name="description" content="Sitio contruido con BULMA CSS para reto 4">
 
-  <link rel="stylesheet" href="/bulma-0.8.2/css/bulma.min.css" />
-  <link rel="stylesheet" href="/css/estilos.css" />
-  <title>BRAND📦</title>
-</head>
-<!-- Cierra head -->
+  <!-- Link a la hoja de estilos propia -->
+  <link rel="stylesheet" href="css/estilos.css">
+
+  <!-- Link al framework utilizado -->
+  <link rel="stylesheet" href="/bulma-0.8.2/css/bulma.min.css">
+
+  <link rel="stylesheet" href="css/animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="/js/scroll.js"></script>
+  <title>Magnolia</title>
+
+</head> <!-- Cierra head -->
 
 <body>
-  <nav class="navbar">
+  <nav class="navbar is-transparent is-fixed-top is-spaced">
     <div class="navbar-brand">
       <a class="navbar-item" href="index.html">
-        <img src="img/logo.png" alt="" />
+        <img src="img/logo_h_blanco.png" alt="" />
       </a>
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-burger">
+      <a role="button" class="navbar-burger burger has-text-light" aria-label="menu" aria-expanded="false"
+        data-target="navbar-burger">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
     <div id="navbar-burger" class="navbar-menu">
-      <div class="navbar-end">
-        <a href="" class="navbar-item has-text-dark">Faqs</a>
-        <a href="" class="navbar-item has-text-dark">Producto y descripción</a>
+      <div class="navbar-start">
+        <a href="/faqs.html" class="navbar-item has-text-light is-size-5">FAQs</a>
+        <a href="/productos.html" class="navbar-item has-text-light is-size-5">Productos</a>
+        <a href="/faqs.html#como_comprar" class="navbar-item has-text-light is-size-5">Comprar</a>
       </div>
     </div>
   </nav>
 
-  <!-- Empiezan Formulario Venta -->
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  <!-- HERO -->
+  <section class="hero is-fullheight">
+    <div class="hero-body is-paddingless">
+      <figure class="image is-fullwidth">
+        <img id="img1" src="/img/vaso_vidrio_1_fondo.jpg" alt="">
+        <div class="columns is-overlay is-mobile">
+          <div class="column is-half centrado-verticalmente">
+            <p class="texto-muy-grande has-text-light has-text-centered is-size-1-mobile">Linea GLASS</p>
+          </div>
+        </div>
+
+      </figure>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <!-- Otros productos -->
   <div class="container">
-    <div class="columns is-multiline is-centered is-vcentered">
-      <div class="column is-3 ">
+    <div class="columns is-centered">
+      <div class="column is-full-mobile is-half-desktop">
         <div class="card">
           <div class="card-image has-text-centered">
-            <img src="img/box2.png" alt="" />
+            <img src="img/vaso_ceramica.jpg" alt="" />
           </div>
           <div class="card-content">
-            <p class="title is-4">Producto 1</p>
+            <p class="title is-4">Linea Ceramica</p>
             <p class="subtitle is-6">
-              Miles de productos hay en el mercado, pero nada como una caja
-              con gatitos
+              Velas en cuencos de cerámica, rústicos y pintorescos, para darle color y aromatizar los rincones. Son la
+              opción más elegida!
             </p>
           </div>
         </div>
       </div>
-      <div class="column is-6">
-        <div class="box">
-          <form action="http://google.com">
-            <div class="field">
-              <label class="label" for="name">Nombre</label>
-              <div class="control">
-                <input type="text" placeholder="" name="name" class="input is-small" />
-              </div>
-            </div>
-            <div class="field">
-              <label class="label" for="email">E-mail</label>
-              <div class="control">
-                <input type="email" placeholder="" name="email" class="input is-small" />
-              </div>
-            </div>
-            <div class="field">
-              <label class="label" for="phone">Teléfono</label>
-              <div class="control">
-                <input type="tel" placeholder="" name="phone" class="input is-small" />
-              </div>
-            </div>
-            <div class="field">
-              <div class="control">
-                <button class="button has-text-dark is-fullwidth" name="submit" value="Confirmar pago"
-                  id="confirmar-pago" type="submit">Confirmar pago</button>
-              </div>
-            </div>
-          </form>
+      <div class="column is-full-mobile is-half-desktop">
+        <div class="card">
+          <div class="card-image has-text-centered">
+            <img src="img/llamita_verde.jpg" alt="" />
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Limited Edition</p>
+            <p class="subtitle is-6">
+              Hermosas velas realizadas en recipientes limitados. Publicaremos en nuestras redes sociales cuando haya
+              una edición limitada!
+            </p>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-
   <!-- Inicio de footer -->
-  <footer class="footer level has-background-grey-dark is-paddingless has-text-white">
-    <div class="lever-left">Términos y condiciones</div>
-    <div class="level-right">contacto@brand.com</div>
+  <footer>
+    <div class="option">Terminos y condiciones</div>
+    <div class="option">contacto@brand.com</div>
   </footer>
   <!-- Fin de Footer -->
 
-
   <!-- Script -->
   <script src="/js/burger-menu.js"></script>
-</body>
-<!-- Cierra body -->
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
+</body> <!-- Cierra body -->
 
-</html>
-<!-- Cierra html -->
+</html> <!-- Cierra html -->
