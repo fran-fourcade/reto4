@@ -28,17 +28,6 @@ nav {
   font-size: 5rem !important;
 }
 
-.mt-1{
-  margin-top: 1rem !important; 
-}
-
-.mt-3{
-  margin-top: 2rem; 
-}
-
-.mt-3{
-  margin-top: 3rem; 
-}
 
 .contacto{
   font-size: 5rem;
@@ -48,7 +37,7 @@ nav {
 
 
 .afterscroll {
-  background-color:#000 !important; 
+  /* background-color:#000 !important;  */
   transition:0.3s all linear;
 }
 
@@ -65,4 +54,13 @@ nav {
   display: block;
 }
 
+.borde1 {
+  border: 2px solid red;
+}
 
+.borde2 {
+  border: 2px solid white;
+}
+.borde3 {
+  border: 2px solid cyan;
+}

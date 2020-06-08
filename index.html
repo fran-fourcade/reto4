@@ -9,10 +9,11 @@
   <link rel="stylesheet" href="css/estilos.css">
 
   <!-- Link al framework utilizado -->
-  <link rel="stylesheet" href="/bulma-0.8.2/css/bulma.min.css">
+  <link rel="stylesheet" href="/bulma-0.9.0/css/bulma.min.css">
 
   <link rel="stylesheet" href="css/animations.css">
   <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f7fe0cc5ec.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="/js/scroll.js"></script>
   <title>Magnolia</title>
@@ -21,22 +22,24 @@
 
 <body>
   <nav class="navbar is-transparent is-fixed-top is-spaced">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-        <img src="img/logo_h_blanco.png" alt="" />
-      </a>
-      <a role="button" class="navbar-burger burger has-text-light" aria-label="menu" aria-expanded="false"
-        data-target="navbar-burger">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbar-burger" class="navbar-menu">
-      <div class="navbar-start">
-        <a href="/faqs.html" class="navbar-item has-text-light is-size-5">FAQs</a>
-        <a href="/productos.html" class="navbar-item has-text-light is-size-5">Productos</a>
-        <a href="/faqs.html#como_comprar" class="navbar-item has-text-light is-size-5">Comprar</a>
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+          <img src="img/logo_h_blanco.png" alt="" width="100" />
+        </a>
+        <a role="button" class="navbar-burger burger has-text-light" aria-label="menu" aria-expanded="false"
+          data-target="navbar-burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar-burger" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="/productos.html" class="navbar-item has-text-light is-size-5">Productos</a>
+          <a href="/faqs.html" class="navbar-item has-text-light is-size-5">FAQs</a>
+          <a href="/faqs.html#como_comprar" class="navbar-item has-text-light is-size-5">Comprar</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -55,11 +58,12 @@
       </figure>
     </div>
   </section>
-  <br>
-  <br>
-  <br>
-  <!-- Otros productos -->
-  <div class="container">
+
+
+  <div class="container my-6">
+    <div class="box">
+      <h1 class="title has-text-centered">Destacados</h1>
+    </div>
     <div class="columns is-centered">
       <div class="column is-full-mobile is-half-desktop">
         <div class="card">
@@ -93,17 +97,31 @@
     </div>
   </div>
 
-  <!-- Inicio de footer -->
-  <footer>
-    <div class="option">Terminos y condiciones</div>
-    <div class="option">contacto@brand.com</div>
-  </footer>
-  <!-- Fin de Footer -->
 
-  <!-- Script -->
+  <footer class="footer has-background-black-ter">
+    <div class="columns">
+      <div class="column has-text-centered">
+        <img src="/img/logo_h_blanco.png" alt="" width="150">
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column is-3 has-text-light">
+        <i class="far fa-copyright"></i>
+        <span>Francisco Fourcade 2020</span>
+      </div>
+      <div class="column is-6 has-text-centered">
+        <a href="https://bulma.io/" target="_blank"><img src=" /img/made-with-bulma.png" alt="" width="150"></a>
+      </div>
+      <div class="column is-3 has-text-right has-text-light">
+        <i class="fas fa-tasks"></i>
+        <span>Reto 4 - Programacion 2 - 2020</span>
+      </div>
+    </div>
+  </footer>
+
+
   <script src="/js/burger-menu.js"></script>
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+</body>
 
-</body> <!-- Cierra body -->
-
-</html> <!-- Cierra html -->
+</html>
