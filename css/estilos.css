@@ -24,6 +24,8 @@ nav {
   margin: auto 0;
 }
 
+
+
 .texto-muy-grande {
   font-size: 5rem !important;
 }
@@ -54,6 +56,9 @@ nav {
   display: block;
 }
 
+
+
+
 .borde1 {
   border: 2px solid red;
 }
@@ -64,3 +69,4 @@ nav {
 .borde3 {
   border: 2px solid cyan;
 }
+

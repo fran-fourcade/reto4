@@ -13,10 +13,16 @@ document.addEventListener("DOMContentLoaded", () => {
         // Get the target from the "data-target" attribute
         const target = el.dataset.target;
         const $target = document.getElementById(target);
+        const links = document.getElementById("links");
+        linksArray = [...links.children];
 
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         el.classList.toggle("is-active");
         $target.classList.toggle("is-active");
+        linksArray.forEach((elem) => {
+          elem.classList.toggle("has-text-light");
+          elem.classList.toggle("has-text-right")
+        });
       });
     });
   }
