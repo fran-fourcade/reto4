@@ -3,10 +3,6 @@ let tabsWithContent = (function () {
   let tabs = document.querySelectorAll('.tabs li');
   let tabsContent = document.querySelectorAll('.tab-content');
 
-  console.log(tabs);
-  console.log(tabsContent);
-
-
   let deactvateAllTabs = function () {
     tabs.forEach(function (tab) {
       tab.classList.remove('is-active');
@@ -35,6 +31,7 @@ let tabsWithContent = (function () {
       activateTabsContent(tab);
     });
   })
+
 
   tabs[0].click();
 })();

@@ -1,3 +1,5 @@
+
+
 body{
   font-family: 'Scope One', serif !important;
 }
@@ -55,6 +57,38 @@ nav {
 #tabs-with-content .tab-content.is-active {
   display: block;
 }
+
+.comprar{
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+.box img{
+  border-radius: 10px;
+}
+
+.tabs ul {
+  width:100%;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+.tabs li {
+  width:25%
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .tabs ul {
+    flex-direction: row;
+    width: 100%;
+  }
+  .tabs ul li {
+    width: 50%;
+    border: lightgrey 1px solid;
+    border-radius: 10px;
+  }
+
+  }
 
 
 

@@ -14,6 +14,7 @@
 
   <link rel="stylesheet" href="css/animations.css">
   <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f7fe0cc5ec.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 
@@ -22,12 +23,12 @@
 </head> <!-- Cierra head -->
 
 <body>
-  <nav class="navbar is-light is-spaced">
+  <nav class="navbar has-background-black-ter is-dark is-spaced">
     <div class="navbar-brand">
       <a class="navbar-item" href="index.html">
-        <img src="img/logo_h.png" alt="" />
+        <img src="img/logo_h_blanco.png" alt="" />
       </a>
-      <a role="button" class="navbar-burger burger has-text-dark" aria-label="menu" aria-expanded="false"
+      <a role="button" class="navbar-burger burger has-text-light" aria-label="menu" aria-expanded="false"
         data-target="navbar-burger">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -35,46 +36,51 @@
       </a>
     </div>
     <div id="navbar-burger" class="navbar-menu">
-      <div class="navbar-end">
-        <a href="/index.html" class="navbar-item has-text-dark is-size-4">Inicio</a>
-        <a href="/faqs.html" class="navbar-item has-text-dark is-size-4">FAQS</a>
+      <div class="navbar-end" id="links">
+        <a href="/index.html" class="navbar-item has-text-light is-size-4">Inicio</a>
+        <a href="/faqs.html" class="navbar-item has-text-light is-size-4">FAQS</a>
       </div>
     </div>
   </nav>
 
 
-  <div id="tabs-with-content">
+  <div class="container box has-text-centered">
+    <h1 class="title ">PRODUCTOS</h1>
+  </div>
+
+  <div class="container" id="tabs-with-content">
     <div class="tabs is-centered is-boxed">
       <ul>
         <li class="is-active">
           <a>
-            <span class="icon"><i class="fas fa-gem" aria-hidden="true"></i></span>
-            <span>GLASS</span>
+            <span class=" icon"><i class="fas fa-gem has-text-info" aria-hidden="true"></i></span>
+            <span class="has-text-info-dark">GLASS</span>
           </a>
         </li>
         <li>
           <a>
-            <span class="icon"><i class="fas fa-stamp" aria-hidden="true"></i></span>
-            <span>CERAMICA</span>
+            <span class="icon"><i class="fas fa-stamp has-text-danger" aria-hidden="true"></i></span>
+            <span class="has-text-danger-dark">CERAMICA</span>
           </a>
         </li>
         <li>
           <a>
-            <span class="icon"><i class="fas fa-star" aria-hidden="true"></i></span>
-            <span>EDICION LIMITADA</span>
+            <span class="icon"><i class="fas fa-star has-text-primary" aria-hidden="true"></i></span>
+            <span class="has-text-primary-dark">EDICION LIMITADA</span>
           </a>
         </li>
         <li>
           <a>
-            <span class="icon"><i class="fas fa-spa" aria-hidden="true"></i></span>
-            <span>ESENCIAS PARA HORNITO</span>
+            <span class="icon"><i class="fas fa-spa has-text-success" aria-hidden="true"></i></span>
+            <span class="has-text-success-dark">ESENCIAS PARA HORNITO</span>
           </a>
         </li>
       </ul>
     </div>
 
+    <!-- Seccion Glass -->
     <section class="container tab-content">
-      <div class="columns is-centered is-mobile is-gapless">
+      <div class="columns is-centered is-gapless">
         <div class="column is-4">
           <div class="box">
             <figure class="image is-1by1">
@@ -85,43 +91,282 @@
         <div class="column is-6">
           <div class="box">
             <h1 class="title">Vela "Hestia"</h1>
+            <span class="subtitle">Vela en vaso de vidrio con 2 pabilos <br> Capacidad: 250gr <br> Duración:
+              30hs
+              <br> Aromas disponibles: Naranja y Vainilla Flan <br><br>
+              <strong>Precio: $450</strong> <br><br>
+              <a href="https://wa.me/5493584345785?text=Hola!%20Me%20interesa%20adquirir%20unA%20Vela%20Hestia"
+                class="button is-info is-fullwidth comprar" target="_blank"><i class="fab fa-whatsapp mr-3"></i>
+                COMPRAR</a>
+            </span>
+            <div class="columns is-gapless">
+              <div class="column is-half">
+                <a href="" class="button is-info is-outlined is-fullwidth comprar">Comprar-Modal</a>
+              </div>
+              <div class="column is-half">
+                <a href="" class="button is-info is-outlined is-fullwidth comprar">Comprar-New Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-1 divider is-info is-hidden-tablet"></div>
+
+      <div class="columns is-centered is-gapless">
+        <div class="column is-4 is-hidden-tablet">
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/caramelera_linda1.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="box">
+            <h1 class="title">Vela "Artemisa"</h1>
+            <span class="subtitle">Vela en caramelera de vidrio <br> Capacidad: 300gr <br> Duración:
+              40hs
+              <br> Aromas disponibles: Naranja y Vainilla Flan <br><br>
+              <strong>Precio: $700</strong> <br><br>
+              <a href="https://wa.me/5493584345785?text=Hola!%20Me%20interesa%20adquirir%20unA%20Vela%20Artemisa"
+                class="button is-info is-fullwidth comprar" target="_blank"><i class="fab fa-whatsapp mr-3"></i>
+                COMPRAR</a>
+            </span>
+            <div class="columns is-centered is-gapless">
+              <div class="column is-half">
+                <a href="" class="button is-info is-outlined is-fullwidth comprar">Comprar-Modal</a>
+              </div>
+              <div class="column is-half">
+                <a href="" class="button is-info is-outlined is-fullwidth comprar">Comprar-New Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="box is-hidden-mobile">
+            <figure class="image is-1by1">
+              <img src="img/caramelera_linda1.jpg" alt="">
+            </figure>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Seccion Ceramica -->
     <section class="container tab-content">
-      <div class="columns is-centered is-mobile is-gapless">
+      <div class="columns is-centered is-gapless">
         <div class="column is-4">
-          <div class="box"></div>
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/vaso_violeta_desde_arriba.jpg" alt="">
+            </figure>
+          </div>
         </div>
         <div class="column is-6">
-          <div class="box"></div>
+          <div class="box">
+            <h1 class="title">Vela "Hebe"</h1>
+            <span class="subtitle">Vela en vaso de ceramica - Colores varios <br> Capacidad: 160gr <br> Duración:
+              20hs
+              <br> Aromas disponibles: Naranja y Vainilla Flan <br><br>
+              <strong>Precio: $350</strong> <br><br>
+              <a href="https://wa.me/5493584345785?text=Hola!%20Me%20interesa%20adquirir%20unA%20Vela%20Hebe"
+                class="button is-danger is-fullwidth comprar" target="_blank"><i class="fab fa-whatsapp mr-3"></i>
+                COMPRAR</a>
+            </span>
+            <div class="columns is-gapless">
+              <div class="column is-half">
+                <a href="" class="button is-danger is-outlined is-fullwidth comprar">Comprar-Modal</a>
+              </div>
+              <div class="column is-half">
+                <a href="" class="button is-danger is-outlined is-fullwidth comprar">Comprar-New Page</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="container tab-content">
-      <div class="columns is-centered is-mobile is-gapless">
-        <div class="column is-4">
-          <div class="box"></div>
+
+      <div class="column is-1 divider is-danger is-hidden-tablet"></div>
+
+      <div class="columns is-centered is-gapless">
+        <div class="column is-4 is-hidden-tablet">
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/cuenco_redondo_rosa.jpg" alt="">
+            </figure>
+          </div>
         </div>
         <div class="column is-6">
-          <div class="box"></div>
+          <div class="box">
+            <h1 class="title">Vela "Gea"</h1>
+            <span class="subtitle">Vela en cuenco de ceramica - Colores varios <br> Capacidad: 200gr <br> Duración:
+              25hs
+              <br> Aromas disponibles: Naranja y Vainilla Flan <br><br>
+              <strong>Precio: $400</strong> <br><br>
+              <a href="https://wa.me/5493584345785?text=Hola!%20Me%20interesa%20adquirir%20unA%20Vela%20Gea"
+                class="button is-danger is-fullwidth comprar" target="_blank"><i class="fab fa-whatsapp mr-3"></i>
+                COMPRAR</a>
+            </span>
+            <div class="columns is-gapless">
+              <div class="column is-half">
+                <a href="" class="button is-danger is-outlined is-fullwidth comprar">Comprar-Modal</a>
+              </div>
+              <div class="column is-half">
+                <a href="" class="button is-danger is-outlined is-fullwidth comprar">Comprar-New Page</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="container tab-content">
-      <div class="columns is-centered is-mobile is-gapless">
-        <div class="column is-4">
-          <div class="box"></div>
-        </div>
-        <div class="column is-6">
-          <div class="box"></div>
+        <div class="column is-4 is-hidden-mobile">
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/cuenco_redondo_rosa.jpg" alt="">
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Seccion Edicion Limitada -->
+    <section class="container tab-content">
+      <div class="columns is-centered is-gapless">
+        <div class="column is-4">
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/budha celeste landscape.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="box">
+            <h1 class="title">Buda de cerámica</h1>
+            <span class="subtitle">Vela en cuenco Buda de ceramica - Colores varios <br> Capacidad: 380gr
+              <br> Duración:
+              45hs
+              <br> Aromas disponibles: Naranja y Vainilla Flan <br><br>
+              <strong>Precio: $550</strong> <br><br>
+              <a href="https://wa.me/5493584345785?text=Hola!%20Me%20interesa%20adquirir%20unA%20Vela%20Buda"
+                class="button is-primary is-fullwidth comprar" target="_blank"><i class="fab fa-whatsapp mr-3"></i>
+                COMPRAR</a>
+            </span>
+            <div class="columns is-gapless">
+              <div class="column is-half">
+                <a href="" class="button is-primary is-outlined is-fullwidth comprar">Comprar-Modal</a>
+              </div>
+              <div class="column is-half">
+                <a href="" class="button is-primary is-outlined is-fullwidth comprar">Comprar-New Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-1 divider is-primary is-hidden-tablet"></div>
+
+      <div class="columns is-centered is-gapless">
+        <div class="column is-4 is-hidden-tablet">
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/llamita_roja1.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="box">
+            <h1 class="title">Llamita</h1>
+            <span class="subtitle">Vela en cuenco Llama de ceramica - Colores varios <br> Capacidad: 500gr <br>
+              Duración:
+              55hs
+              <br> Aromas disponibles: Naranja y Vainilla Flan <br><br>
+              <strong>Precio: $670</strong> <br><br>
+              <a href="https://wa.me/5493584345785?text=Hola!%20Me%20interesa%20adquirir%20unA%20Vela%20Gea"
+                class="button is-primary is-fullwidth comprar" target="_blank"><i class="fab fa-whatsapp mr-3"></i>
+                COMPRAR</a>
+            </span>
+            <div class="columns is-gapless">
+              <div class="column is-half">
+                <a href="" class="button is-primary is-outlined is-fullwidth comprar">Comprar-Modal</a>
+              </div>
+              <div class="column is-half">
+                <a href="" class="button is-primary is-outlined is-fullwidth comprar">Comprar-New Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4 is-hidden-mobile">
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/llamita_roja1.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Seccion Esencias para hornito -->
+    <section class="container tab-content">
+      <div class="columns is-centered is-gapless">
+        <div class="column is-4">
+          <div class="box">
+            <figure class="image is-1by1">
+              <img src="img/hornito alto encendido portrait.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="column is-6">
+          <div class="box">
+            <h1 class="title">Esencias para hornitos</h1>
+            <span class="subtitle">Esencias sólidas de cera de soja - Formas varias <br> Duración: 2hs
+              <br> CON LA COMPRA DE TU VELA, TE LLEVAS UNA ESENCIA DE REGALO!
+              <br></br> Aromas disponibles: Naranja y Vainilla Flan <br><br>
+              <strong>Precio: $25</strong> <br><br>
+              <a href="https://wa.me/5493584345785?text=Hola!%20Me%20interesa%20adquirir%20unA%20Vela%20Buda"
+                class="button is-success is-fullwidth comprar" target="_blank"><i class="fab fa-whatsapp mr-3"></i>
+                COMPRAR</a>
+            </span>
+            <div class="columns is-gapless">
+              <div class="column is-half">
+                <a href="" class="button is-success is-outlined is-fullwidth comprar">Comprar-Modal</a>
+              </div>
+              <div class="column is-half">
+                <a href="" class="button is-success is-outlined is-fullwidth comprar">Comprar-New Page</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
   </div>
 
+
+
+  <footer class="footer has-background-black-ter">
+    <div class="columns">
+      <div class="column is-3 has-text-light has-text-centered">
+        <i class=" far fa-copyright"></i>
+        <span>Francisco Fourcade 2020</span>
+      </div>
+      <div class="column has-text-centered">
+        <img src="/img/logo_h_blanco.png" alt="" width="150">
+      </div>
+      <div class="column is-3 has-text-light has-text-centered">
+        <i class="fas fa-tasks"></i>
+        <span>Reto 4 - Programacion 2 - 2020</span>
+      </div>
+    </div <div class="columns">
+    <div class="column has-text-centered"><a class=" subtitle has-text-light" href="/terminos.html">Términos y
+        Condiciones</a>
+    </div>
+    <div class="column is-12 has-text-centered">
+      <a href="https://bulma.io/" target="_blank"><img src=" /img/made-with-bulma.png" alt="" width="150"></a>
+    </div>
+    </div>
+
+
+
+    </div>
+  </footer>
+  <script src="/js/burger-menu.js"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="/js/tabs.js"></script>
 </body>

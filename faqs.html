@@ -20,13 +20,13 @@
 </head> <!-- Cierra head -->
 
 <body>
-  <nav class="navbar is-light is-spaced">
+  <nav class="navbar has-background-black-ter is-dark is-spaced">
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
-          <img src="img/logo_h.png" alt="" />
+          <img src="img/logo_h_blanco.png" alt="" />
         </a>
-        <a role="button" class="navbar-burger burger has-text-dark" aria-label="menu" aria-expanded="false"
+        <a role="button" class="navbar-burger burger has-text-light" aria-label="menu" aria-expanded="false"
           data-target="navbar-burger">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -34,16 +34,17 @@
         </a>
       </div>
       <div id="navbar-burger" class="navbar-menu">
-        <div class="navbar-start pl-4">
-          <a href="/index.html" class="navbar-item has-text-dark is-size-4">Inicio</a>
-          <a href="/productos.html" class="navbar-item has-text-dark is-size-4">Productos</a>
+        <div class="navbar-end" id="links">
+          <a href="/index.html" class="navbar-item has-text-light is-size-4">Inicio</a>
+          <a href="/productos.html" class="navbar-item has-text-light is-size-4">Productos</a>
         </div>
       </div>
     </div>
   </nav>
   <div class="container">
-    <h1 class=" title has-text-centered">Preguntas Frecuentes</h1>
-    <div class="divider is-info"></div>
+    <div class="box">
+      <h1 class=" title has-text-centered">Preguntas Frecuentes</h1>
+    </div>
     <h1 class="title is-4 has-text-centered">¿Qué es Magnolia?</h1>
 
     <h2 class="subtitle mt-1">Magnolia es un emprendimiento nacido con la idea inicial de ofrecer
@@ -54,9 +55,12 @@
       de
       brindar un producto que proporcione más valor que el precio que paga el cliente.</h2>
 
-    <div class="hero is-info is-bold" id="como_comprar">
+    <div class="hero is-success is-bold" id="como_comprar">
       <div class="hero-body">
-        <h1 class="title has-text-centered pb-3">¿Cómo puedo comprar los productos de Magnolia?</h1>
+        <h1 class="title has-text-centered pb-3">¿Cómo puedo comprar los <a class="has-text-success-light  is-italic"
+            href="/productos.html">productos</a>
+          de
+          Magnolia?</h1>
         <h2 class="subtitle has-text-centered pb-3">Podés contactarnos y contarnos qué producto querés en los siquientes
           medios:</h2>
 
@@ -139,6 +143,35 @@
 
 
   </div>
+
+
+
+  <footer class="footer has-background-black-ter">
+    <div class="columns">
+      <div class="column is-3 has-text-light has-text-centered">
+        <i class=" far fa-copyright"></i>
+        <span>Francisco Fourcade 2020</span>
+      </div>
+      <div class="column has-text-centered">
+        <img src="/img/logo_h_blanco.png" alt="" width="150">
+      </div>
+      <div class="column is-3 has-text-light has-text-centered">
+        <i class="fas fa-tasks"></i>
+        <span>Reto 4 - Programacion 2 - 2020</span>
+      </div>
+    </div <div class="columns">
+    <div class="column has-text-centered"><a class=" subtitle has-text-light" href="/terminos.html">Términos y
+        Condiciones</a>
+    </div>
+    <div class="column is-12 has-text-centered">
+      <a href="https://bulma.io/" target="_blank"><img src=" /img/made-with-bulma.png" alt="" width="150"></a>
+    </div>
+    </div>
+
+
+
+    </div>
+  </footer>
   <!-- Script -->
   <script src="/js/burger-menu.js"></script>
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
