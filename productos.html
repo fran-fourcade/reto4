@@ -11,6 +11,7 @@
   <!-- Link al framework utilizado -->
   <link rel="stylesheet" href="/bulma-0.9.0/css/bulma.min.css">
   <link rel="stylesheet" href="css/bulma-divider.css">
+  <link rel="stylesheet" href="/bulma-0.9.0/bulma-modal-fx-v1.1.0/css/modal-fx.min.css" />
 
   <link rel="stylesheet" href="css/animations.css">
   <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
@@ -101,7 +102,8 @@
             </span>
             <div class="columns is-gapless">
               <div class="column is-half">
-                <a href="" class="button is-info is-outlined is-fullwidth comprar">Comprar-Modal</a>
+                <a href="" class="button is-info is-outlined is-fullwidth comprar modal-button"
+                  data-target="modal-id">Comprar-Modal</a>
               </div>
               <div class="column is-half">
                 <a href="" class="button is-info is-outlined is-fullwidth comprar">Comprar-New Page</a>
@@ -181,7 +183,7 @@
                 <a href="" class="button is-danger is-outlined is-fullwidth comprar">Comprar-New Page</a>
               </div>
             </div>
-          </div>
+          </div>active
         </div>
       </div>
 
@@ -339,6 +341,95 @@
   </div>
 
 
+  <!-- trigger button -->
+  <span class="button modal-button" data-target="modal-id">Open modal</span>
+
+  <!-- related modal with fx class "modal-fx-fadeInScale" -->
+  <div id="modal-id" class="modal modal-fx-fadeInScale">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+
+      <form class="form box">
+        <fieldset>
+
+          <!-- Form Name -->
+          <legend class="has-text-primary title">Formulario de Compra</legend>
+
+          <!-- Text input-->
+          <div class="field">
+            <label class="label subtitle has-text-primary-dark" for="input-nombre">Nombre</label>
+            <div class="control">
+              <input id="input-nombre" name="input-nombre" type="text" placeholder="Ej: Juan Perez"
+                class="input is-primary is-rounded">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="field">
+            <label class="label has-text-primary-dark  subtitle" for="input-mail">Email</label>
+            <div class="control">
+              <input id="input-mail" name="input-mail" type="email" placeholder="ej: juanperez@ejemplo.com"
+                class="input is-primary is-rounded" required="">
+
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="field">
+            <label class="label subtitle has-text-primary-dark" for="select-vela">Vela</label>
+            <div class="control">
+              <div class="select is-primary is-rounded is-fullwidth">
+                <select id="select-vela" name="select-vela" class="">
+                  <option>Hestia</option>
+                  <option>Artemisa</option>
+                  <option>Hebe</option>
+                  <option>Gea</option>
+                  <option>Buda</option>
+                  <option>Llamita</option>
+                  <option>Esencia para Hornitos</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Select Basic -->
+          <div class="field">
+            <label class="label subtitle has-text-primary-dark" for="select-aroma">Aroma</label>
+            <div class="control">
+              <div class="select is-primary is-rounded is-fullwidth">
+                <select id="select-aroma" name="select-aroma" class="">
+                  <option>Vainilla - Flan</option>
+                  <option>Naranja</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="field">
+            <label class="label" for="boton-comprar"></label>
+            <div class="control">
+              <button id="boton-comprar" name="boton-comprar"
+                class="button is-primary  is-fullwidth mt-6 is-rounded">Comprar</button>
+            </div>
+          </div>
+
+        </fieldset>
+      </form>
+    </div>
+    <button class=" modal-close is-large" aria-label="close"></button>
+  </div>
+
+
+
+
+
+
+
+
+
+
 
   <footer class="footer has-background-black-ter">
     <div class="columns">
@@ -369,4 +460,6 @@
   <script src="/js/burger-menu.js"></script>
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="/js/tabs.js"></script>
+  <script type="text/javascript" src="/bulma-0.9.0/bulma-modal-fx-v1.1.0/js/modal-fx.min.js"></script>
+
 </body>
