@@ -5,38 +5,40 @@
   <meta charset="utf-8">
   <meta name="description" content="Sitio contruido con BULMA CSS para reto 4">
 
-  <!-- Link a la hoja de estilos propia -->
-  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="stylesheet" href="./bulma-0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="./css/animations.css">
 
-  <!-- Link al framework utilizado -->
-  <link rel="stylesheet" href="/bulma-0.8.2/css/bulma.min.css">
-
-  <link rel="stylesheet" href="css/animations.css">
   <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-  <script src="/js/scroll.js"></script>
-  <title>Magnolia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 
-</head> <!-- Cierra head -->
+  <script src="https://kit.fontawesome.com/f7fe0cc5ec.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="./js/scroll.js"></script>
+
+  <title>Magnolia</title>
+</head>
 
 <body>
   <nav class="navbar is-transparent is-fixed-top is-spaced">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">
-        <img src="img/logo_h_blanco.png" alt="" />
-      </a>
-      <a role="button" class="navbar-burger burger has-text-light" aria-label="menu" aria-expanded="false"
-        data-target="navbar-burger">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbar-burger" class="navbar-menu">
-      <div class="navbar-start">
-        <a href="/faqs.html" class="navbar-item has-text-light is-size-5">FAQs</a>
-        <a href="/productos.html" class="navbar-item has-text-light is-size-5">Productos</a>
-        <a href="/faqs.html#como_comprar" class="navbar-item has-text-light is-size-5">Comprar</a>
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="./index.html">
+          <img src="./img/logo_h_blanco.png" alt="" width="100" />
+        </a>
+        <a role="button" class="navbar-burger burger has-text-light" aria-label="menu" aria-expanded="false"
+          data-target="navbar-burger">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar-burger" class="navbar-menu has-text-light">
+        <div class="navbar-start" id="links">
+          <a href="./productos.html" class="navbar-item  is-size-5 has-text-light">Productos</a>
+          <a href=" ./faqs.html" class="navbar-item  is-size-5 has-text-light">FAQs</a>
+          <a href="./faqs.html#como_comprar" class="navbar-item  is-size-5 has-text-light">Comprar</a>
+        </div>
       </div>
     </div>
   </nav>
@@ -45,26 +47,46 @@
   <section class="hero is-fullheight">
     <div class="hero-body is-paddingless">
       <figure class="image is-fullwidth">
-        <img id="img1" src="/img/vaso_vidrio_1_fondo.jpg" alt="">
+        <img id="img1" src="./img/vaso_vidrio_1_fondo.jpg" alt="">
         <div class="columns is-overlay is-mobile">
           <div class="column is-half centrado-verticalmente">
             <p class="texto-muy-grande has-text-light has-text-centered is-size-1-mobile">Linea GLASS</p>
           </div>
         </div>
-
       </figure>
     </div>
   </section>
-  <br>
-  <br>
-  <br>
-  <!-- Otros productos -->
-  <div class="container">
+
+  <!-- SECCION ENVIO GRATIS -->
+  <section>
+    <div class="container">
+      <div class="columns is-centered is-gappless">
+        <div class="column is-half">
+          <figure class="image is-1by1">
+            <img src="./img/envio-gratis.jpg" alt="">
+          </figure>
+        </div>
+        <div class="column is-half">
+          <span class="title">ENVÍO GRATIS!</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- SECCION DESTACADOS -->
+  <div class="container my-6">
+    <div class="box">
+      <h1 class="title has-text-centered">Destacados</h1>
+    </div>
     <div class="columns is-centered">
       <div class="column is-full-mobile is-half-desktop">
         <div class="card">
           <div class="card-image has-text-centered">
-            <img src="img/vaso_ceramica.jpg" alt="" />
+            <img src="./img/vaso_ceramica.jpg" alt="" />
           </div>
           <div class="card-content">
             <p class="title is-4">Linea Ceramica</p>
@@ -78,7 +100,7 @@
       <div class="column is-full-mobile is-half-desktop">
         <div class="card">
           <div class="card-image has-text-centered">
-            <img src="img/llamita_verde.jpg" alt="" />
+            <img src="./img/llamita_verde.jpg" alt="" />
           </div>
           <div class="card-content">
             <p class="title is-4">Limited Edition</p>
@@ -89,21 +111,36 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 
-  <!-- Inicio de footer -->
-  <footer>
-    <div class="option">Terminos y condiciones</div>
-    <div class="option">contacto@brand.com</div>
+
+  <footer class="footer has-background-black-ter">
+    <div class="columns">
+      <div class="column is-3 has-text-light has-text-centered">
+        <i class=" far fa-copyright"></i>
+        <span>Francisco Fourcade 2020</span>
+      </div>
+      <div class="column has-text-centered">
+        <img src="./img/logo_h_blanco.png" alt="" width="150">
+      </div>
+      <div class="column is-3 has-text-light has-text-centered">
+        <i class="fas fa-tasks"></i>
+        <span>Reto 4 - Programacion 2 - 2020</span>
+      </div>
+    </div <div class="columns">
+    <div class="column has-text-centered"><a class=" subtitle has-text-light" href="./terminos.html">Términos y
+        Condiciones</a>
+    </div>
+    <div class="column is-12 has-text-centered">
+      <a href="https://bulma.io/" target="_blank"><img src="./img/made-with-bulma.png" alt="" width="150"></a>
+    </div>
+    </div>
+    </div>
   </footer>
-  <!-- Fin de Footer -->
 
-  <!-- Script -->
-  <script src="/js/burger-menu.js"></script>
+  <script src="./js/burger-menu.js"></script>
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+</body>
 
-</body> <!-- Cierra body -->
-
-</html> <!-- Cierra html -->
+</html>
