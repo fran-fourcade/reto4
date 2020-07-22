@@ -1,12 +1,9 @@
-
-
-body{
-  font-family: 'Scope One', serif !important;
+body {
+  font-family: "Scope One", serif !important;
 }
 
 nav {
   background-color: #0000 !important;
-  
 }
 
 #confirmar-pago {
@@ -22,27 +19,22 @@ nav {
   height: 100vh;
 }
 
-.centrado-verticalmente{
+.centrado-verticalmente {
   margin: auto 0;
 }
-
-
 
 .texto-muy-grande {
   font-size: 5rem !important;
 }
 
-
-.contacto{
+.contacto {
   font-size: 5rem;
   color: #fff;
 }
 
-
-
 .afterscroll {
   /* background-color:#000 !important;  */
-  transition:0.3s all linear;
+  transition: 0.3s all linear;
 }
 
 #tabs-with-content .tabs:not(:last-child) {
@@ -58,24 +50,22 @@ nav {
   display: block;
 }
 
-.comprar{
-  font-family: 'Ubuntu', sans-serif !important;
+.comprar {
+  font-family: "Ubuntu", sans-serif !important;
 }
 
-.box img{
+.box img {
   border-radius: 10px;
 }
 
 .tabs ul {
-  width:100%;
-  flex-direction:row;
-  flex-wrap:wrap;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .tabs li {
-  width:25%
+  width: 25%;
 }
-
-
 
 @media screen and (max-width: 768px) {
   .tabs ul {
@@ -87,11 +77,7 @@ nav {
     border: lightgrey 1px solid;
     border-radius: 10px;
   }
-
-  }
-
-
-
+}
 
 .borde1 {
   border: 2px solid red;
@@ -103,4 +89,3 @@ nav {
 .borde3 {
   border: 2px solid cyan;
 }
-
