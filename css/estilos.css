@@ -6,14 +6,6 @@ nav {
   background-color: #0000 !important;
 }
 
-#confirmar-pago {
-  background-color: #7acc2d !important;
-}
-
-#confirmar-pago:hover {
-  background-color: #63a426 !important;
-}
-
 #img1 {
   object-fit: cover;
   height: 100vh;
@@ -75,7 +67,7 @@ nav {
   .tabs ul li {
     width: 50%;
     border: lightgrey 1px solid;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 }
 
