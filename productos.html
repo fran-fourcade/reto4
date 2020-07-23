@@ -22,7 +22,9 @@
 </head>
 
 <body>
+  <!-- NAVEGACION -->
   <nav class="navbar has-background-black-ter is-dark is-spaced">
+    <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="./index.html">
         <img src="./img/logo_h_blanco.png" alt="" />
@@ -39,6 +41,7 @@
         <a href="./index.html" class="navbar-item has-text-light is-size-4">Inicio</a>
         <a href="./faqs.html" class="navbar-item has-text-light is-size-4">FAQS</a>
       </div>
+    </div>
     </div>
   </nav>
 
@@ -100,8 +103,8 @@
             </span>
             <div class="columns">
               <div class="column">
-                <a href="" class="button is-info is-outlined is-fullwidth comprar modal-button"
-                  data-target="modal-id">Comprar-Modal</a>
+                <span class="button is-info is-outlined is-fullwidth comprar modal-button"
+                  data-target="modal-id">Comprar-Modal</span>
               </div>
             </div>
           </div>
@@ -129,7 +132,7 @@
             </span>
             <div class="columns is-centered is-gapless">
               <div class="column">
-                <a href="" class="button is-info is-outlined is-fullwidth comprar">Comprar-Modal</a>
+                <span class="button is-info is-outlined is-fullwidth comprar modal-button" data-target="modal-id">Comprar-Modal</span>
               </div>
             </div>
           </div>
@@ -167,7 +170,7 @@
             </span>
             <div class="columns is-gapless">
               <div class="column">
-                <a href="" class="button is-danger is-outlined is-fullwidth comprar">Comprar-Modal</a>
+                <span class="button is-danger is-outlined is-fullwidth comprar modal-button" data-target="modal-id">Comprar-Modal</span>
               </div>
             </div>
           </div>
@@ -196,7 +199,7 @@
             </span>
             <div class="columns">
               <div class="column">
-                <a href="" class="button is-danger is-outlined is-fullwidth comprar">Comprar-Modal</a>
+                <span class="button is-danger is-outlined is-fullwidth comprar modal-button" data-target="modal-id">Comprar-Modal</span>
               </div>
             </div>
           </div>
@@ -235,7 +238,7 @@
             </span>
             <div class="columns">
               <div class="column">
-                <a href="" class="button is-primary is-outlined is-fullwidth comprar">Comprar-Modal</a>
+                <span class="button is-primary is-outlined is-fullwidth comprar modal-button" data-target="modal-id">Comprar-Modal</span>
               </div>
             </div>
           </div>
@@ -265,7 +268,7 @@
             </span>
             <div class="columns">
               <div class="column">
-                <a href="" class="button is-primary is-outlined is-fullwidth comprar">Comprar-Modal</a>
+                <span class="button is-primary is-outlined is-fullwidth comprar modal-button" data-target="modal-id">Comprar-Modal</span>
               </div>
             </div>
           </div>
@@ -304,7 +307,7 @@
             </span>
             <div class="columns">
               <div class="column">
-                <a href="" class="button modal-button is-success is-outlined is-fullwidth comprar " data-target="modal-id">Comprar-Modal</a>
+                <span class="button is-success is-outlined is-fullwidth comprar modal-button" data-target="modal-id">Comprar-Modal</span>
               </div>
             </div>
           </div>
@@ -314,15 +317,12 @@
   </div>
 
 
-  <!-- trigger button -->
-  <span class="button modal-button" data-target="modal-id">Open modal</span>
-
-  <!-- related modal with fx class "modal-fx-fadeInScale" -->
+  <!-- MODAL -->
   <div id="modal-id" class="modal modal-fx-fadeInScale">
     <div class="modal-background"></div>
     <div class="modal-content">
 
-      <form class="form box">
+      <form action="mailto:f.fourcade@itecriocuarto.org.ar?Subject=Formulario%20de%20compra" class="form box" method="POST" enctype="text/plain">
         <fieldset>
 
           <!-- Form Name -->
@@ -383,8 +383,8 @@
           <div class="field">
             <label class="label" for="boton-comprar"></label>
             <div class="control">
-              <button id="boton-comprar" name="boton-comprar"
-                class="button is-primary  is-fullwidth mt-6 is-rounded">Comprar</button>
+              <input type="submit" id="boton-comprar" name="boton-comprar"
+                class="button is-primary  is-fullwidth mt-6 is-rounded" value="Comprar">
             </div>
           </div>
 
@@ -394,16 +394,7 @@
     <button class=" modal-close is-large" aria-label="close"></button>
   </div>
 
-
-
-
-
-
-
-
-
-
-
+<!-- FOOTER -->
   <footer class="footer has-background-black-ter">
     <div class="columns">
       <div class="column is-3 has-text-light has-text-centered">
@@ -425,11 +416,10 @@
       <a href="https://bulma.io/" target="_blank"><img src="./img/made-with-bulma.png" alt="" width="150"></a>
     </div>
     </div>
-
-
-
     </div>
   </footer>
+
+  <!-- SCRIPTS -->
   <script src="./js/burger-menu.js"></script>
   <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
   <script src="./js/tabs.js"></script>

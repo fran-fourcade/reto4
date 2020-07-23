@@ -59,61 +59,47 @@
 
   <!-- SECCION ENVIO GRATIS -->
   <section>
-    <div class="container">
-      <div class="columns is-centered is-gappless">
-        <div class="column is-half">
-          <figure class="image is-1by1">
-            <img src="./img/envio-gratis.jpg" alt="">
-          </figure>
-        </div>
-        <div class="column is-half">
-          <span class="title">ENVÍO GRATIS!</span>
-        </div>
+    <div class="hero is-fullheight">
+      <div class="hero-body is-paddingless">
+        <figure class="image is-fullwidth">
+          <img src="./img/enviogratis.jpg" alt="">
+        </figure>
       </div>
     </div>
   </section>
 
-
-
-
-
   <!-- SECCION DESTACADOS -->
-  <div class="container my-6">
+  <div class="container">
     <div class="box">
-      <h1 class="title has-text-centered">Destacados</h1>
+      <h1 class="title has-text-centered ">DESTACADOS</h1>
     </div>
-    <div class="columns is-centered">
+    <div class="columns is-centered is-vcentered mb-2">
       <div class="column is-full-mobile is-half-desktop">
-        <div class="card">
-          <div class="card-image has-text-centered">
-            <img src="./img/vaso_ceramica.jpg" alt="" />
-          </div>
-          <div class="card-content">
-            <p class="title is-4">Linea Ceramica</p>
-            <p class="subtitle is-6">
-              Velas en cuencos de cerámica, rústicos y pintorescos, para darle color y aromatizar los rincones. Son la
-              opción más elegida!
-            </p>
-          </div>
+        <div class="box">
+          <a href="productos.html">
+          <figure class="image"><img src="./img/vaso_ceramica.jpg" alt="" /></figure>
+          <p class="title is-4 mt-2">Linea Ceramica</p>
+          <p class="subtitle is-6">
+            Velas en cuencos de cerámica, rústicos y pintorescos, para darle color y aromatizar los rincones. Son la
+            opción más elegida!
+          </p>
+          </a>
         </div>
       </div>
       <div class="column is-full-mobile is-half-desktop">
-        <div class="card">
-          <div class="card-image has-text-centered">
-            <img src="./img/llamita_verde.jpg" alt="" />
-          </div>
-          <div class="card-content">
-            <p class="title is-4">Limited Edition</p>
+        <div class="box">
+          <a href="productos.html">
+            <figure class="image"><img src="./img/llamita_verde.jpg" alt="" /></figure>
+            <p class="title is-4 mt-4">Limited Edition</p>
             <p class="subtitle is-6">
               Hermosas velas realizadas en recipientes limitados. Publicaremos en nuestras redes sociales cuando haya
               una edición limitada!
             </p>
-          </div>
+            </a>
         </div>
       </div>
     </div>
   </div>
-
 
   <footer class="footer has-background-black-ter">
     <div class="columns">
